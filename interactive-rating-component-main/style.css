@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input, textarea, button {
+    border: none;
+    outline: none;
+    background: none;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Farba označenia */
+::selection {
+    background: #1d3848;
+    color: #F7F6EE;
+    text-shadow: none;
+}
+
+
+/*Scroll bar*/
+body::-webkit-scrollbar {
+    width: 0.85em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F7F6EE;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1d3848;
+    border-radius: 6px;
+    border: 1px solid #F7F6EE;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.6em;
+    color: hsl(0, 0%, 100%);
+    background: hsl(216, 12%, 8%);
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1440px;
+    height:90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-basis: 23%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom, #252d37, #1a1d22);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.first-page {
+    display: block;
+}
+
+
+.card-star-place {
+    position: relative;
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-paragraf {
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.card-rating {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card-rating li {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-rating li:hover {
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 54%);
+}
+
+.card-rating li.special {
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.btn-submit {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    transition: 0.3s;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* SECOND-page */
+
+.second-page {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-page .card-rating-title {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.25rem 0 0.1rem 0;
+    font-weight: 400;
+    color: rgba(251, 116, 19, 0.75);
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2rem;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.second-page .second-page-title {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.second-page .second-paragraph {
+    margin-top: 1rem;
+    color: hsl(217, 12%, 63%);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: #3e52a3; }
